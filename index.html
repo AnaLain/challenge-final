@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <a class="header__contenido"></a>
+        <img class="header__contenido__logo" src="./assets/Logo.png">
+    </header>
+    <main class="contenedor">
+        <section class="s1">
+            <div class="inicio__challenge__texto">
+                <h1 class="presentacion__contenido__titulo"></h1>
+                <div class="tContent">
+                    <textarea  class="text1" id="textoUsuario" name="w3review" rows="4" cols="50"></textarea>
+                    <p class="mensajeAlerta" id="textoAlerta"></p>
+                    
+                </div>
+                <div class="conversor__boton">
+                    <button onclick="encriptarTexto();" class="conversor__encriptar" id="encriptar">Encriptar</button>
+                    <button onclick="desencriptarTexto();" class="converso__desencriptar">Desencriptar</button>
+                </div>
+            </div>
+        </section>  
+        <section class="s2">    
+            <div class="mensaje__contenido">    
+                <div class="contenedor__imagen">
+                    <textarea class="text2" id="textoCaptura" name="w3review" rows="4" cols="50"></textarea>
+                    <img class="presentación__imagen" src="./assets/image 1.jpg">
+                </div>
+                <div class="Mensaje__encriptado">
+                    <h1 class="titulo__mensaje">Ningun mensaje fue encontrado</h1>
+                    <p class="titulo__mensaje__texto">Ingresa texto que dese encriptar o desencriptar</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--<footer class="footer">
+        <P>Desarrollado por Ana Díaz</P>
+    </footer>--> 
+    <script src="./app/app.js"></script>
+</body>
+</html>
